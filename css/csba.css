@@ -1,0 +1,13 @@
+.notif {
+	min-width: 400px;
+	max-width: 500px;
+	height: 400px;
+	overflow: scroll;
+}
+.c img .profil{
+	width: 200px;
+	height: 200px;
+}
+.c {
+	min-height: 100px;
+}

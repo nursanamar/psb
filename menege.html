@@ -1,0 +1,30 @@
+<?php 
+	include 'cone.php';
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mneger psb</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Id_csba</td>
+			<td>Nama</td>
+			<td>Asal sekolah</td>
+			<td>pass</td>
+		</tr>
+		<?php 
+			$ambil=mysql_query("SELECT * FROM csba");
+			while ($data=mysql_fetch_array($ambil)) {
+				echo "<tr>
+					<td>$data[id_csba]</td>
+					<td>$data[nama]</td>
+					<td>$data[sekolah_asal]</td>
+					<td>$data[pass]</td>
+				</tr>";
+			}
+		 ?>
+	</table>
+</body>
+</html>

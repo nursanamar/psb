@@ -1,0 +1,1 @@
+SELECT `csba`.`id_csba`,`csba`.`nama`,`orang_tua`.`ayah`,`wali`.`nama` AS wali,`pilihan_jurusan`.`pertama` AS jurusan FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba

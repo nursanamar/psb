@@ -1,0 +1,81 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: white;
+	height: 100%;
+}
+.a{
+	background:;
+	font-weight: bold;
+	color: white;
+	border: none;
+	margin: 0;
+}
+nav{
+	color: white;
+		margin: none;
+		background-color: rgb(34,45,63);
+}
+.b{
+	border-bottom: 2px solid black;
+}
+li a{
+	color: white;
+	padding-top: 5px;
+	margin-right: 5px;
+}
+li a:hover{
+	background:#003300
+}
+.carousel {
+  height: 100%;
+  width: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family:gt;
+}
+nav{
+	margin:none;
+}
+.c{
+	padding: 0;
+}
+.logo{
+	height: 100%;
+	width: 100%;
+}
+.item img{
+	width: 100%;
+	height: 100%;
+}
+nav .d ul li a{
+	color: white;
+}
+.row2{
+	text-align: center;
+	font-weight: bold;
+	font-family: gt;
+}
+.tombol{
+	border: none;
+	border-radius: 0;
+	width: 80%;
+	background-color: rgb(52,152,219);
+}
+.tombol:hover{
+	box-shadow: 10px 10px 10px;
+}
+.ke2{
+	margin-top: 20px;
+}
+.ke2 h1 {
+	text-align: center;
+}
+@font-face {
+	font-family: gt;
+	src:url(../font/gt-walsheim-web.ttf);
+}
