@@ -4,7 +4,8 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 	padding-top: 70px;
-	background-position:10%; 
+	background-position:10%;
+  font-family: tulis; 
 }
 .aa{
   max-width: 300px;
@@ -36,11 +37,38 @@ h1{
 .alur img{
   width: 100%;
 }
+.e img{
+  width:100%;
+  height: 100%;
+}
+.footer .afoot{
+  text-align: center;
+  color: #fff;
+}
+.footer {
+  background: #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .container{
+  background: #444;
+}
+.footer ul li{
+  list-style: none;
+}
+.e{
+  background: #2dcc70;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.e h2 {
+  text-align: center;
+}
 .alur{
   margin-bottom: 10px;
 }
-.c,.d {
-  background-color: #eeeeee;
+.c,.d, .ca{
+  background-color: #fff;
   padding: 10px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -50,6 +78,8 @@ h1{
 }
 .d {
   text-align: center;
+  background: #252525;
+  color: #fff;
 }
 .divider{
   background-image: url(../image/divider3.png);
@@ -178,3 +208,8 @@ fieldset[disabled] .a .btn-link:hover,
 .a .btn-link[disabled]:focus,
 fieldset[disabled] .a .btn-link:focus {
   color: #444;
+
+@font-face {
+  font-family: "tulis";
+  src: url(../fonts/a.ttf);
+}
