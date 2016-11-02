@@ -49,8 +49,8 @@
     			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <ul>
-                    <li>Cara mengisi Formulir</li>
-                    <li>FAQ</li>
+                    <li><a href="bantuan.php" target="_blank">Panduan Pendaftaran</a></li>
+                    <li><a href="faq.php" target="_blank">FAQ</a></li>
                 </ul>
     		</div>
     	</div>
