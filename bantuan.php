@@ -19,7 +19,7 @@
 <?php include 'header.php'; ?>
 	<div class="row c bantuan">
 		<div class="container">
-			<h2>Cara mengisi formulir</h2>
+			<h2>Panduan Pendaftaran</h2>
 		</div>
 		<div class="container">
 			<div class="col-md-12 col-sm-12">
