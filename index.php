@@ -28,7 +28,7 @@
     			<h1>Selamat datang<br> di situs pendaftarn online</h1>
     			<p class="col-sm-6 col-sm-offset-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    			quis nostrud exercitation<br><a href="daftar.php" class="btn btn-primary">Isi formulir</a> </p>
+    			quis nostrud exercitation<br><br><a href="daftar.php" class="btn btn-primary">Isi formulir</a> </p>
     		</div>
     	</div>
     </div>
