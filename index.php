@@ -98,7 +98,7 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-bullhorn"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Pengumuman</h4>
@@ -112,7 +112,7 @@
             </ul>
     	</div>
     </div>
-    <div class="row e">
+    <div class="row e" style="color:white;">
         <div class="container">
             <h2>Tentang SMK 1 Bulukumba</h2>
         </div>
@@ -121,12 +121,78 @@
                 <img src="image/placeholder.jpg">
             </div>
             <div class="col-lg-6 col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in cu</p>
+                <p>SMK Negeri 1 Bulukumba sebagai lembaga pendidikan kejuruan yang berstandar Nasional beralamat di Jalan Teratai Nomor 24, Telepon (0413) 81168, Fax. (0413) 83903, Kode Pos 92512 Bulukumba, Provinsi Sulawesi Selatan. Dirintis sejak 1969 dengan nama SMEA Negeri 14 Kajang, dengan Nomor SK 14/UKK.3/69 tanggal 12 – 08 – 1969. Tahun 1979 dipindahkan ke Kota Bulukumba dengan nama SMEA Negeri Kajang di Bulukumba, dan tahun 1983 berubah menjadi SMEA Negeri Bulukumba dengan keputusan Dirjen. Dikdasmen No. 13906/C.1/R.83 tanggal 23 September 1982 dan tahun 1996 berubah menjadi SMK Negeri 1 Bulukumba.<br><br><a href="http://smkn1bulukumba.sch.id/about-us.html">Profil lengkap</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row c">
+        <div class="container">
+            <h2 style="text-align:center;">Profil Jurusan</h2>
+        </div>
+        <div class="container">
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Administrasi Perkantoran</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Akuntansi</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Tata Niaga</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Tata Busana</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Teknik Komputer dan Jaringan</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Teknik Kendaraan Ringan</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Teknik Audio Video</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div>
+                    <img src="image/placeholder.jpg">
+                </div>
+                <div>
+                    <h4 style="text-align:center;">Nautika Kapal Penagkap Ikan</h4>
+                </div>
             </div>
         </div>
     </div>
