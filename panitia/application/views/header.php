@@ -4,7 +4,7 @@
         <div class='navbar-header'>
           <a class='navbar-brand' href='#menu-toggle' id='menu-toggle' onclick='togel()'><span class='glyphicon glyphicon-list' aria-hidden='true'></span></a>
           <div class='navbar-brand'>
-            Dashboard Staff
+            Dashboard Panitia
           </div>
         </div>
         <!--/.nav-collapse -->
