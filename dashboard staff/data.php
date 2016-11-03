@@ -7,7 +7,7 @@
 	mysqli_select_db($quy,"psb");
 	session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+        echo "<script type='text/javascript'>window.location='http://nursanamar.esy.es/'</script>";
     }
  ?>
  <!DOCTYPE html>
@@ -43,7 +43,7 @@
  			<td>alamat wali</td>
  			<td>pendidikan wali</td>
  		</thead>
- 		<?php 
+ 		<?php
 	$query="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba";
 	$jln=mysqli_query($quy,$query);
 	while ($data=mysqli_fetch_array($jln)) {

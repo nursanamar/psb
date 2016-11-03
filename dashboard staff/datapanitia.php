@@ -2,7 +2,7 @@
 	include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+        echo "<script type='text/javascript'>window.location='http://nursanamar.esy.es/'</script>";
     }
     $id=$_SESSION['id'];
     $hlmn="panitia";
@@ -24,7 +24,7 @@ session_start();
 			}
  ?>
 
- <?php 
+ <?php
 	if (isset($_GET['id'])) {
 		$hps=mysqli_query($sambung,"DELETE FROM panitia WHERE id_panitia='$_GET[id]'")or die(mysqli_error($sambung));
 		if ($hps) {
@@ -34,9 +34,9 @@ session_start();
 			</script>";
 			echo "<script type='text/javascript'>window.location='datapanitia.php'</script>";
 		} else {
-			
+
 		}
-		
+
 	}
 	if (isset($_GET['edit'])) {
 	$id_panitia=$_GET['id_panitia'];
@@ -102,14 +102,14 @@ session_start();
     									<input type="text" name="pass" value="<?php echo "$pass"; ?>">
     								</div>
     							</div>
-    							
+
     							<input type="submit" name="submit" class="btn btn-lg btn-primary">
     						</form>
     					</div>
     				</div>
     				<div class="row kotak">
     					<div class="col-lg-12">
-    						<?php 
+    						<?php
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
@@ -155,7 +155,7 @@ session_start();
 										<td>Aksi</td>
 									</tr>
 								</thead>
-							<?php 
+							<?php
 								if ($abl) {
 									$no="";
 									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
@@ -168,9 +168,9 @@ session_start();
 											<td>$data[pass]</td>
 											<td><a href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
 											</tr>";
-			
+
 									}
-								}		
+								}
 							?>
 							</table>
     					</div>

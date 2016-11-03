@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CSBA</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/psb.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/csba.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/psb.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/csba.css">
 </head>
 <body>
 	<nav class='navbar navbar-fixed-top a'>
@@ -70,7 +70,7 @@
  							</form>
     	</div>
     </div>
-    <?php 
+    <?php
     if (isset($csba)) {
     	foreach ($csba->result() as $data) { ?>
 		<div class="row c">
@@ -81,7 +81,7 @@
 		    					<p for="nama">Nama</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->nama"; ?></p>    					
+		                        <p><?php echo "$data->nama"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -89,7 +89,7 @@
 		    					<p for="ttlhr">Tempat lahir</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->tt_lahir"; ?></p>    					
+		                        <p><?php echo "$data->tt_lahir"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -97,7 +97,7 @@
 		    					<p for="tgl">Tanggal lahir</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->tgl_lahir"; ?></p>    					
+		                        <p><?php echo "$data->tgl_lahir"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -105,7 +105,7 @@
 		    					<p for="kelamin">Jenis Kelamin</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->klmin"; ?></p>    					
+		                        <p><?php echo "$data->klmin"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -113,7 +113,7 @@
 		    					<p for="Agama">Agama</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->agama"; ?></p>    	               
+		                        <p><?php echo "$data->agama"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -121,7 +121,7 @@
 		    					<p for="wn">Warga Negara</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->warganegara"; ?></p>    					
+		                        <p><?php echo "$data->warganegara"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -129,7 +129,7 @@
 		    					<p for="alamat">Alamat</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->alamat"; ?></p>    					
+		                        <p><?php echo "$data->alamat"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -137,7 +137,7 @@
 		    					<p for="aslsklh">Asal sekolah</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->sekolah_asal"; ?></p>    					
+		                        <p><?php echo "$data->sekolah_asal"; ?></p>
 		    				</div>
 		    			</div>
 		    			<div class="row">
@@ -145,7 +145,7 @@
 		    					<p for="almasklh">Alamat Sekolah asal</p>
 		    				</div>
 		    				<div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->alamat_sklhasl"; ?></p>    					
+		                        <p><?php echo "$data->alamat_sklhasl"; ?></p>
 		    				</div>
 		    			</div>
 		                <h3>Data Orang Tua</h3>
@@ -155,7 +155,7 @@
 		                        <p for="ayah">Nama Ayah</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->ayah"; ?></p>                        
+		                        <p><?php echo "$data->ayah"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -163,7 +163,7 @@
 		                        <p for="tgl_ayah">Tanggal lahir Ayah</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->tgl_ayah"; ?></p>                       
+		                        <p><?php echo "$data->tgl_ayah"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -171,7 +171,7 @@
 		                        <p for="alamat_ayah">Alamat Ayah</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->alamat_ayah"; ?></p>                       
+		                        <p><?php echo "$data->alamat_ayah"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -179,7 +179,7 @@
 		                        <p for="pndkn_ayah">Pendidikan Ayah</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->pendidikan_ayah"; ?></p>                        
+		                        <p><?php echo "$data->pendidikan_ayah"; ?></p>
 		                    </div>
 		                </div>
 		                <h4>Ibu</h4>
@@ -188,7 +188,7 @@
 		                        <p for="ibu">Nama Ibu</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->ibu"; ?></p>                    
+		                        <p><?php echo "$data->ibu"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -196,7 +196,7 @@
 		                        <p for="tgl_ibu">Tanggal lahir Ibu</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->tgl_ibu"; ?></p>                       
+		                        <p><?php echo "$data->tgl_ibu"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -204,7 +204,7 @@
 		                        <p for="alamat_ibu">Alamat Ibu</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->alamat_ibu"; ?></p>                       
+		                        <p><?php echo "$data->alamat_ibu"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -212,7 +212,7 @@
 		                        <p for="pndkn_ibu">Pendidikan Ibu</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->pendidikan_ibu"; ?></p>                        
+		                        <p><?php echo "$data->pendidikan_ibu"; ?></p>
 		                    </div>
 		                </div>
 		                <h3>Wali</h3>
@@ -221,7 +221,7 @@
 		                        <p for="wali">Nama Wali</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->nama_wali"; ?></p>                        
+		                        <p><?php echo "$data->nama_wali"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -229,7 +229,7 @@
 		                        <p for="tgl_wali">Tanggal lahir Wali</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->tgl"; ?></p>                        
+		                        <p><?php echo "$data->tgl"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -237,7 +237,7 @@
 		                        <p for="alamat_wali">Alamat Wali</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->alamat"; ?></p>                        
+		                        <p><?php echo "$data->alamat"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -245,7 +245,7 @@
 		                        <p for="pndkn_wali">Pendidikan Wali</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->pendidikan"; ?></p>                        
+		                        <p><?php echo "$data->pendidikan"; ?></p>
 		                    </div>
 		                </div>
 		                <h3>Pilihan Program Keahlian</h3>
@@ -254,7 +254,7 @@
 		                        <p for="jurusan1">Pilihan Pertama</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->pertama"; ?></p>                        
+		                        <p><?php echo "$data->pertama"; ?></p>
 		                    </div>
 		                </div>
 		                <div class="row">
@@ -262,24 +262,24 @@
 		                        <p for="jurusan2">Pilihan Kedua</p>
 		                    </div>
 		                    <div class="col-sm-8 col-xs-8 col-md-8">
-		                        <p><?php echo "$data->kedua"; ?></p>                        
+		                        <p><?php echo "$data->kedua"; ?></p>
 		                    </div>
 		                </div>
     		</div>
     	</div>
-    	<?php 
-    		if (isset($nilai)) { 
+    	<?php
+    		if (isset($nilai)) {
     	?>
     			<div class="row c">
 			  		<div class="col-sm-12 col-md-12">
 			  			<h3>Nilai tes kesehatan</h3>
-			  			<span><?php echo "$data->nama "; ?>telah melakukan tes</span><br> 
+			  			<span><?php echo "$data->nama "; ?>telah melakukan tes</span><br>
 			  			<div class="row">
 					    	<div class="col-sm-4 col-xs-4 col-md-4">
 					    		<p for="nama">Berat</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[berat]"."Kg"; ?></p>    					
+					            <p><?php echo "$nilai[berat]"."Kg"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -287,7 +287,7 @@
 					    		<p for="nama">Tinggi</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[tinggi]"."Cm"; ?></p>    					
+					            <p><?php echo "$nilai[tinggi]"."Cm"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -295,7 +295,7 @@
 					    		<p for="nama">Tensi</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[tensi]"."Mmhg"; ?></p>    					
+					            <p><?php echo "$nilai[tensi]"."Mmhg"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -303,7 +303,7 @@
 					    		<p for="nama">Rabun</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[rabun]"; ?></p>    					
+					            <p><?php echo "$nilai[rabun]"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -311,7 +311,7 @@
 					    		<p for="nama">Buta warna</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[buta]"; ?></p>    					
+					            <p><?php echo "$nilai[buta]"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -319,7 +319,7 @@
 					    		<p for="nama">Riwayat merokok</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[merokok]"; ?></p>    					
+					            <p><?php echo "$nilai[merokok]"; ?></p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -327,12 +327,12 @@
 					    		<p for="nama">Riwayat penyakit</p>
 					    	</div>
 					    	<div class="col-sm-8 col-xs-8 col-md-8">
-					            <p><?php echo "$nilai[penyakit]"; ?></p>    					
+					            <p><?php echo "$nilai[penyakit]"; ?></p>
 					    	</div>
 					    </div>
 			  		</div>
   				</div>
-    		<?php 
+    		<?php
     		 } else { ?>
     			<div class="row c">
   			<div class="col-sm-12 col-md-12">
@@ -402,27 +402,27 @@
     			<div class="col-sm-2 col-md-2">
     				<textarea name="penyakit"></textarea>
     			</div>
-    		</div>	
+    		</div>
     		<input type="submit" name="submit" class="btn btn-lg btn-primary">
     			</form>
   			</div>
-  		</div> 
+  		</div>
     		<?php }
-    		
+
     	?>
-    	
+
 		<?php }
 	}
 	?>
-    
-  	
-	
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://localhost/psb/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="http://localhost/psb/js/bootstrap.min.js"></script>
-    <script src="http://localhost/psb/js/docs.min.js"></script>
-    <script type="text/javascript" src="http://localhost/psb/js/slide.js"></script>
+    <script>window.jQuery || document.write('<script src="http://nursanamar.esy.es/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://nursanamar.esy.es/js/bootstrap.min.js"></script>
+    <script src="http://nursanamar.esy.es/js/docs.min.js"></script>
+    <script type="text/javascript" src="http://nursanamar.esy.es/js/slide.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://localhost/psb//js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://nursanamar.esy.es//js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

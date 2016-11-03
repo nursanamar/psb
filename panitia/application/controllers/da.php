@@ -1,21 +1,21 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 session_start();
 if (empty($_SESSION['id_pnt'])) {
-	header('http://localhost/psb/');
+	header('http://nursanamar.esy.es/');
 	echo "string";
 }
 class da extends CI_Controller {
-	
+
 	function __construct(){
 		parent::__construct();
 		$this->session->id=$_SESSION['id_pnt'];
 		$id=$this->session->id;
 		$tabel["id"]=$id;
 		if (empty($id)) {
-			redirect('http://localhost/psb/');
+			redirect('http://nursanamar.esy.es/');
 		}
 		$this->load->model("model");
-		$data['id']=$_SESSION['id_pnt']; 
+		$data['id']=$_SESSION['id_pnt'];
 	}
 
 	public function index()
@@ -27,7 +27,7 @@ class da extends CI_Controller {
 	public function loguot()
 	{
 		unset($_SESSION['id_pnt']);
-		redirect('http://localhost/psb/panitia');
+		redirect('http://nursanamar.esy.es/panitia');
 	}
 	public function coba()
 	{
@@ -36,7 +36,7 @@ class da extends CI_Controller {
 	}
 	public function alih()
 	{
-		redirect('http://localhost/psb/panitia/index.php/da/coba');
+		redirect('http://nursanamar.esy.es/panitia/index.php/da/coba');
 	}
 	public function cari()
 	{

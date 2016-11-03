@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php 
+<?php
 	$hlmn='notiflist';
  ?>
 <!DOCTYPE html>
@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>panita</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/sidebar.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/sidebar.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/dashboard.css">
 	<script type="text/javascript">
 		function togel() {
         	var x=document.getElementById("wrapper");
