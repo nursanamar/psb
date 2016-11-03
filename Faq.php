@@ -29,22 +29,19 @@
 				consequat. Duis aute irure dolor in re</p>
 				<ul>
 					<li>
-						<h4><i>Lorem ipsum dolor sit amet, consectetur adipisicing ?.</i></h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris</p>
+						<h4><i>Apakah data pada formulir bisa di ubah ?.</i></h4>
+						<p>Bisa, melalui panitia dengan menujukan data yang valid sesuai dengan berkas yang anda punya
+							seperti akte kelahiran,ijazah,kartu keluarga,dll.
+					</p>
 					</li><br>
 					<li>
-						<h4><i>Lorem ipsum dolor sit amet, consectetur adipisicing  consectetur adipisicing elit ?.</i></h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris</p>
+						<h4><i>Bagaimana jika saya lupa password  ?.</i></h4>
+						<p>Anda dapat segera melapor ke panitia</p>
 					</li><br>
 					<li>
-						<h4><i>Lorem ipsum dolor sit amet, consectetur adipisicing ?.</i></h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris</p>
+						<h4><i>Seberapa pentigkah ID ?.</i></h4>
+						<p>ID menjadi pembeda data antar siswa baru atau sebagai tanda pengenal siswa baru dan juga
+						pengganti nomor formulir dan tes,jadi anda harus tetap ingat ID anda</p>
 					</li><br>
 					<li>
 						<h4><i>Lorem ipsum dolor sit amet, consectetur adipisicing  consectetur adipisicing elit ?.</i></h4>
