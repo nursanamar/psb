@@ -16,7 +16,7 @@
 		.bantuan ul li{
 			margin-bottom: 20px;
 		}
-		@media (min-width:320px) {
+		@media (max-width:320px) {
 			.bantuan ul li img{
 				width: 100%;
 			}
