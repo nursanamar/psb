@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'psb';
+$db['default']['hostname'] = 'mysql.idhostinger.com';
+$db['default']['username'] = 'u443265179_root';
+$db['default']['password'] = 'root123';
+$db['default']['database'] = 'u443265179_psb';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

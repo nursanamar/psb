@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* 
+*
 */
 class csba extends CI_Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
@@ -13,10 +13,10 @@ class csba extends CI_Controller
 		$id=$this->session->id;
 		$tabel["id"]=$id;
 		if (empty($id)) {
-			redirect('http://localhost/psb/');
+			redirect('http://nursanamar.esy.es/');
 		}
 		$this->load->model("model");
-		$data['id']=$_SESSION['id_csb']; 
+		$data['id']=$_SESSION['id_csb'];
 	}
 	public function index()
 	{

@@ -28,7 +28,7 @@
                       <h2 class='form-singin-heading'></h2>
                       <input type='text' name='id' class='form-control' placeholder='ID'>
                       <input type='password' name='pass' class='form-control' placeholder='Password'>
-                      $f
+                      
                       <button class='btn btn-primary btn-block aaa'>Login</button>
                   </form>
                 </div>

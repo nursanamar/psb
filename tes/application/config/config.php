@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/psb/tes/';
+$config['base_url']	= 'http://nursanamar.esy.es/tes/';
 
 /*
 |--------------------------------------------------------------------------

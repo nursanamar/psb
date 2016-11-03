@@ -2,5 +2,5 @@
 	session_start();
 	session_unset();
 	session_destroy();
-	echo "<script type='text/javascript'>window.location='http://localhost/psb/'</script>";
+	echo "<script type='text/javascript'>window.location='http://nursanamar.esy.es//'</script>";
  ?>

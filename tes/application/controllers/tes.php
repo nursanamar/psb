@@ -1,18 +1,18 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* 
+*
 */
 class tes extends CI_Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
 		session_start();
 		if (empty($_SESSION['id_guru'])) {
-				redirect('http://localhost/psb/');
+				redirect('http://nursanamar.esy.es/');
 			}
-		$this->load->model('model');	
+		$this->load->model('model');
 	}
 	public function index()
 	{

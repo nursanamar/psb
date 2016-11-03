@@ -2,7 +2,7 @@
 	include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+        echo "<script type='text/javascript'>window.location='http://nursanamar.esy.es/'</script>";
     }
     $id=$_SESSION['id'];
     $hlmn="guru";
@@ -25,7 +25,7 @@ session_start();
 			}
  ?>
 
- <?php 
+ <?php
 	if (isset($_GET['id'])) {
 		$hps=mysqli_query($sambung,"DELETE FROM guru WHERE id_guru='$_GET[id]'")or die(mysqli_error($sambung));
 		if ($hps) {
@@ -34,9 +34,9 @@ session_start();
 			</script>";
 			echo "<script type='text/javascript'>window.location='dataguru.php'</script>";
 		} else {
-			
+
 		}
-		
+
 	}
 	if (isset($_GET['edit'])) {
 	$id_guru=$_GET['id_guru'];
@@ -109,7 +109,7 @@ session_start();
     								</div>
     								<div class="col-sm-2 col-md-2">
     									<select type="text" name="jurusan">
-    									<?php 
+    									<?php
                                             switch ($jurusan) {
                                                 case 'kesehatan':
                                                     echo " <option value='kesehatan' selected>Kesehatan</option>";
@@ -137,7 +137,7 @@ session_start();
     				</div>
     				<div class="row kotak">
     					<div class="col-lg-12">
-    						<?php 
+    						<?php
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
@@ -184,7 +184,7 @@ session_start();
 										<td>Aksi</td>
 									</tr>
 								</thead>
-							<?php 
+							<?php
 								if ($abl) {
 									$no="";
 									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
@@ -198,9 +198,9 @@ session_start();
 											<td>$data[pass]</td>
 											<td><a href='dataguru.php?id=$data[id_guru]'>hapus</a>||<a href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
 											</tr>";
-			
+
 									}
-								}		
+								}
 							?>
 							</table>
     					</div>

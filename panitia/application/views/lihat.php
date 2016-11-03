@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php 
+<?php
 	$hlmn='data';
  ?>
 <!DOCTYPE html>
@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>panita</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/sidebar.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/sidebar.css">
+	<link rel="stylesheet" type="text/css" href="http://nursanamar.esy.es/css/dashboard.css">
 	<script type="text/javascript">
 		function togel() {
         	var x=document.getElementById("wrapper");
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select name="kelamin">
-                                        <?php 
+                                        <?php
                                             if ($data->klmin=="L") {
                                                 echo "<option value='P'>P</option>
                                             <option value='L' selected>L</option>";
@@ -72,9 +72,9 @@
                                                 echo "<option value='P' selected>P</option>
                                             <option value='L'>L</option>";
                                             }
-                                            
+
                                          ?>
-                                            
+
                                         </select>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select name="Agama">
-                                        <?php 
+                                        <?php
                                             switch ($data->agama) {
                                                 case 'Islam':
                                                     echo "<option value='Islam' selected>Islam</option>
@@ -198,7 +198,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select type="text" name="pndkn_ayah" placeholder="Alamat Ayah">
-                                        <?php 
+                                        <?php
                                             switch ($data->pendidikan_ayah) {
                                                 case 'SD':
                                                     echo "<option value='SD' selected>SD/Sederajat</option>";
@@ -266,7 +266,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select type="text" name="pndkn_ibu" placeholder="Alamat Ibu">
-                                        <?php 
+                                        <?php
                                             switch ($data->pendidikan_ibu) {
                                                 case 'SD':
                                                     echo "<option value='SD' selected>SD/Sederajat</option>";
@@ -334,7 +334,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select type="text" name="pndkn_wali" placeholder="Alamat Wali">
-                                        <?php 
+                                        <?php
                                             switch ($data->pendidikan) {
                                                 case 'SD':
                                                     echo "<option value='SD' selected>SD/Sederajat</option>";
@@ -378,7 +378,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select type="text" name="jurusan1" placeholder="Alamat Wali">
-                                        <?php 
+                                        <?php
                                             switch ($data->pertama) {
                                                 case 'AK':
                                                     echo " <option value='AK' selected>Akuntansi</option>";
@@ -426,7 +426,7 @@
                                     </div>
                                     <div class="col-sm-5 col-md-5">
                                         <select type="text" name="jurusan2" placeholder="Alamat Wali">
-                                        <?php 
+                                        <?php
                                             switch ($data->kedua) {
                                                 case 'AK':
                                                     echo " <option value='AK' selected>Akuntansi</option>";
@@ -478,7 +478,7 @@
                                     <div class="col-sm-3 col-md-3">
                                         <a href="" class="btn btn-default" onclick="window.close()">Kembali</a>
                                     </div>
-                                </div>             
+                                </div>
                             </form>
     					</div>
     				</div>
