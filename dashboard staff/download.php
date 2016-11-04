@@ -1,4 +1,4 @@
-<?php 
+<?php
   include 'cone.php';
 
 session_start();
@@ -36,7 +36,8 @@ session_start();
               <div class="col-sm-12 col-md-12">
               	<h2>Download data</h2>
               	<p><a href="ex.php?data=data">download semua data csb lulus dan tidak lulus</a></p>
-              	<p><a href="ex.php?data=datalulus">download hanya yang lulus</a></p>
+                <p><a href="ex.php?data=datalulus">download hanya yang lulus</a></p>
+              	<p><a href="ex.php?data=tes">download Nilai tes</a></p>
               </div>
             </div>
           </div>
