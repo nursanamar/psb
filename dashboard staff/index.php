@@ -55,11 +55,11 @@ session_start();
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
- 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba WHERE csba.$kit='$ket'";
+ 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba WHERE csba.$kit='$ket'";
 							 	}else{
- 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba ORDER BY csba.id_csba DESC";
+ 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba ORDER BY csba.id_csba DESC";
  								}if (isset($_GET['rst'])) {
- 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba ORDER BY csba.id_csba DESC";
+ 									$q="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba ORDER BY csba.id_csba DESC";
  								}
  								$abl=mysqli_query($sambung,$q) or die(mysqli_error($sambung));
   							?>
