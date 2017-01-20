@@ -44,7 +44,7 @@
  			<td>pendidikan wali</td>
  		</thead>
  		<?php
-	$query="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN Pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba";
+	$query="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN pilihan_jurusan ON wali.id_csba=pilihan_jurusan.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba";
 	$jln=mysqli_query($quy,$query);
 	while ($data=mysqli_fetch_array($jln)) {
 		echo "<tr>
