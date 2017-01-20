@@ -1,8 +1,8 @@
 <?php 
-	$host= "localhost";
-	$user="root";
-	$pass="";
-	$dbase="psb";
+	$host= "mysql.idhostinger.com";
+	$user="u443265179_root";
+	$pass="root123";
+	$dbase="u443265179_psb";
 	$quy=mysqli_connect($host,$user,$pass);
 	mysqli_select_db($quy,"psb");
 	session_start();
