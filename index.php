@@ -50,7 +50,7 @@
     			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <ul>
                     <li><a href="bantuan.php" target="_blank">Panduan Pendaftaran</a></li>
-                    <li><a href="faq.php" target="_blank">FAQ</a></li>
+                    <li><a href="Faq.php" target="_blank">FAQ</a></li>
                 </ul>
     		</div>
     	</div>
