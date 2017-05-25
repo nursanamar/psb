@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$pesan ="<div class='form-group'><div class='alert alert-danger'><span>Masih ada data yang belum terisi!</span></div></div>";
     $nama="";
     $ttlhr ="";
@@ -12,7 +12,7 @@
     if (isset($_GET['res'])) {
         $nama=$_GET['nama'];
     }
-    
+
   ?>
  <!DOCTYPE html>
  <html>
@@ -37,7 +37,15 @@
     					<label for="nama">Nama</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="text" name="nama" placeholder="Nama lengkap" value="<?php echo $nama; ?>">
+    					<input class="form-control" type="text" name="nama" placeholder="Nama lengkap" value="<?php echo $nama; ?>" required>
+    				</div>
+    			</div>
+					<div class="form-group">
+    				<div class="col-sm-4 col-md-4">
+    					<label for="nisn">NISN</label>
+    				</div>
+    				<div class="col-sm-8 col-md-8">
+    					<input class="form-control" type="number" name="nisn" placeholder="NISN" required>
     				</div>
     			</div>
     			<div class="form-group">
@@ -45,7 +53,7 @@
     					<label for="ttlhr">Tempat lahir</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="text" name="ttlhr" placeholder="tempat lahir">
+    					<input class="form-control" type="text" name="ttlhr" placeholder="tempat lahir" required>
     				</div>
     			</div>
     			<div class="form-group">
@@ -53,7 +61,7 @@
     					<label for="tgl">Tanggal lahir</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="date" name="tgl" value="<?php echo date('Y-m-d'); ?>">
+    					<input class="form-control" type="date" name="tgl" value="<?php echo date('Y-m-d'); ?>" required>
     				</div>
     			</div>
     			<div class="form-group">
@@ -86,7 +94,7 @@
     					<label for="wn">Warga Negara</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="text" name="wn" placeholder="Kewarganegaraan" min="1" max="3">
+    					<input class="form-control" type="text" name="wn" placeholder="Kewarganegaraan" min="1" max="3" required>
     				</div>
     			</div>
     			<div class="form-group">
@@ -94,7 +102,7 @@
     					<label for="alamat">Alamat</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<textarea class="form-control" name="alamat" placeholder="Alamat"></textarea>
+    					<textarea class="form-control" name="alamat" placeholder="Alamat" required></textarea>
     				</div>
     			</div>
     			<div class="form-group">
@@ -102,7 +110,7 @@
     					<label for="aslsklh">Asal sekolah</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="text" name="aslsklh" placeholder="asal sklh">
+    					<input class="form-control" type="text" name="aslsklh" placeholder="asal sklh" required>
     				</div>
     			</div>
     			<div class="form-group">
@@ -110,7 +118,30 @@
     					<label for="almasklh">Alamat Sekolah asal</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<textarea class="form-control" name="almasklh" placeholder="alamat sekolah asal"></textarea>
+    					<textarea class="form-control" name="almasklh" placeholder="alamat sekolah asal" required></textarea>
+    				</div>
+    			</div>
+					<div class="form-group">
+    				<div class="col-sm-4 col-md-4">
+    					<label for="ijazah">NO. Ijazah SMP/MTs/Paket B</label>
+    				</div>
+    				<div class="col-sm-8 col-md-8">
+    					<input class="form-control" type="number" name="ijazah" placeholder="NO. Ijazah" required>
+    				</div>
+    			</div>
+					<div class="form-group">
+    				<div class="col-sm-4 col-md-4">
+    					<label for="nilai">Jumlah Nilai ujian</label>
+    				</div>
+    				<div class="col-sm-8 col-md-8">
+							<div class="col-sm-4 col-md-4 col">
+								<label for="un">UN</label>
+								<input type="number" class="form-control" name="un" required>
+							</div>
+							<div class="col-sm-4 col-md-4">
+								<label for="us">US</label>
+								<input type="number" class="form-control" name="us" required>
+							</div>
     				</div>
     			</div>
                 <h3>Data Orang Tua</h3>
@@ -120,7 +151,7 @@
                         <label for="ayah">Nama Ayah</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="ayah" placeholder="Ayah">
+                        <input class="form-control" type="text" name="ayah" placeholder="Ayah" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -128,15 +159,15 @@
                         <label for="tgl_ayah">Tanggal lahir Ayah</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="date" name="tgl_ayah" placeholder="Tnggal Lahir Ayah">
+                        <input class="form-control" type="date" name="tgl_ayah" placeholder="Tnggal Lahir Ayah" required>
                     </div>
                 </div>
-                <div class="form-group">
+								<div class="form-group">
                     <div class="col-sm-4 col-md-4">
-                        <label for="alamat_ayah">Alamat Ayah</label>
+                        <label for="pekerjaan_ayah">Pekerjaan</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="alamat_ayah" placeholder="Alamat Ayah">
+                        <input class="form-control" type="text" name="pekerjaan_ayah" placeholder="Pekerjaan" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -154,13 +185,21 @@
                         </select>
                     </div>
                 </div>
+								<div class="form-group">
+                    <div class="col-sm-4 col-md-4">
+                        <label for="alamat_ayah">Alamat Ayah</label>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <textarea class="form-control" name="alamat_ayah" placeholder="Format(Kel/Desa,Kecamatan,Kabupaten)" required></textarea>
+                    </div>
+                </div>
                 <h4>Ibu</h4>
                 <div class="form-group">
                     <div class="col-sm-4 col-md-4">
                         <label for="ibu">Nama Ibu</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="ibu" placeholder="Ibu">
+                        <input class="form-control" type="text" name="ibu" placeholder="Ibu" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -168,15 +207,15 @@
                         <label for="tgl_ibu">Tanggal lahir Ibu</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="date" name="tgl_ibu" placeholder="Tnggal Lahir Ibu">
+                        <input class="form-control" type="date" name="tgl_ibu" placeholder="Tnggal Lahir Ibu" required>
                     </div>
                 </div>
-                <div class="form-group">
+								<div class="form-group">
                     <div class="col-sm-4 col-md-4">
-                        <label for="alamat_ibu">Alamat Ibu</label>
+                        <label for="pekerjaan_ibu">Pekerjaan</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="alamat_ibu" placeholder="Alamat Ibu">
+                        <input class="form-control" type="text" name="pekerjaan_ibu" placeholder="Pekerjaan" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -184,7 +223,7 @@
                         <label for="pndkn_ibu">Pendidikan Ibu</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <select class="form-control" type="text" name="pndkn_ibu" placeholder="Alamat Ibu">
+                        <select class="form-control" type="text" name="pndkn_ibu" placeholder="Alamat Ibu" required>
                             <option value="SD">SD/Sederajat</option>
                             <option value="SLTP">SLTP/Sederajat</option>
                             <option value="SLTA">SLTA/Sederajat</option>
@@ -192,6 +231,14 @@
                             <option value="S2">S2</option>
                             <option value="S3">S3</option>
                         </select>
+                    </div>
+                </div>
+								<div class="form-group">
+                    <div class="col-sm-4 col-md-4">
+                        <label for="alamat_ibu">Alamat Ibu</label>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <textarea class="form-control" name="alamat_ibu" placeholder="Format(Kel/Desa,Kecamatan,Kabupaten)" required></textarea>
                     </div>
                 </div>
                 <h3>Wali</h3>
@@ -200,7 +247,7 @@
                         <label for="wali">Nama Wali</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="wali" placeholder="Wali">
+                        <input class="form-control" type="text" name="wali" placeholder="Wali" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -208,15 +255,15 @@
                         <label for="tgl_wali">Tanggal lahir Wali</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="date" name="tgl_wali" placeholder="Tnggal Lahir Wali">
+                        <input class="form-control" type="date" name="tgl_wali" placeholder="Tnggal Lahir Wali" required>
                     </div>
                 </div>
-                <div class="form-group">
+								<div class="form-group">
                     <div class="col-sm-4 col-md-4">
-                        <label for="alamat_wali">Alamat Wali</label>
+                        <label for="pekerjaan_wali">Pekerjaan</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <input class="form-control" type="text" name="alamat_wali" placeholder="Alamat Wali">
+                        <input class="form-control" type="text" name="pekerjaan_wali" placeholder="Pekerjaan" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -224,7 +271,7 @@
                         <label for="pndkn_wali">Pendidikan Wali</label>
                     </div>
                     <div class="col-sm-8 col-md-8">
-                        <select class="form-control" type="text" name="pndkn_wali" placeholder="Alamat Wali">
+                        <select class="form-control" type="text" name="pndkn_wali" placeholder="Alamat Wali" required>
                             <option value="SD">SD/Sederajat</option>
                             <option value="SLTP">SLTP/Sederajat</option>
                             <option value="SLTA">SLTA/Sederajat</option>
@@ -232,6 +279,14 @@
                             <option value="S2">S2</option>
                             <option value="S3">S3</option>
                         </select>
+                    </div>
+                </div>
+								<div class="form-group">
+                    <div class="col-sm-4 col-md-4">
+                        <label for="alamat_wali">Alamat Wali</label>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <textarea class="form-control" name="alamat_wali" placeholder="Format(Kel/Desa,Kecamatan,Kabupaten)" required></textarea>
                     </div>
                 </div>
                 <h3>Pilihan Program Keahlian</h3>
@@ -270,8 +325,8 @@
                     </div>
                 </div>
     			<div class="from-group" id="err">
-    				<?php 
-                        
+    				<?php
+
                         if (isset($_GET['res'])) {
                             echo "$pesan";
                         } else {
@@ -292,4 +347,3 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
  </body>
  </html>
- 
