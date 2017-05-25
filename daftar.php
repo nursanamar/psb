@@ -61,7 +61,7 @@
     					<label for="tgl">Tanggal lahir</label>
     				</div>
     				<div class="col-sm-8 col-md-8">
-    					<input class="form-control" type="date" name="tgl" value="<?php echo date('Y-m-d'); ?>" required>
+    					<input class="form-control" type="date" name="tgl" required>
     				</div>
     			</div>
     			<div class="form-group">
