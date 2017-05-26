@@ -2,10 +2,9 @@
 session_start();
 if (empty($_SESSION['id_pnt'])) {
 	header('http://localhost/psb/');
-	echo "string";
 }
 class da extends CI_Controller {
-	
+
 	function __construct(){
 		parent::__construct();
 		$this->session->id=$_SESSION['id_pnt'];
@@ -15,7 +14,7 @@ class da extends CI_Controller {
 			redirect('http://localhost/psb/');
 		}
 		$this->load->model("model");
-		$data['id']=$_SESSION['id_pnt']; 
+		$data['id']=$_SESSION['id_pnt'];
 	}
 
 	public function index()
