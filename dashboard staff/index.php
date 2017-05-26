@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
@@ -7,7 +7,7 @@ session_start();
     $id=$_SESSION['id'];
     $hlmn="data";
  ?>
- <?php 
+ <?php
 	if (isset($_GET['id'])) {
 		$hps=mysqli_query($sambung,"DELETE FROM csba WHERE id_csba='$_GET[id]'")or die(mysql_error());
 		$ortu=mysqli_query($sambung,"DELETE FROM orang_tua WHERE id_csba='$_GET[id]'")or die(mysql_error());
@@ -21,7 +21,7 @@ session_start();
 		} else {
 			# code...
 		}
-		
+
 	}
  ?>
 <!DOCTYPE html>
@@ -51,7 +51,7 @@ session_start();
     			<div class="container-fluid">
     				<div class="row kotak">
     					<div class="col-lg-12">
-    						<?php 
+    						<?php
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
@@ -101,7 +101,7 @@ session_start();
 										<td>Aksi</td>
 									</tr>
 								</thead>
-							<?php 
+							<?php
 								if ($abl) {
 									$no="";
 									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
@@ -116,14 +116,14 @@ session_start();
 											<td>$data[nama_wali]</td>
 											<td>$data[pertama]</td>
 											<td>$data[tgl_regist]</td>
-											<td><a href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a><a href='index.php?id=$data[id_csba]'>hapus</a><a href='index.php?id=$data[id_csba]'>hapus</a></td>
-							
+											<td><a href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a><a href='index.php?id=$data[id_csba]'> hapus </a><a href='lihat.php?id=$data[id_csba]'>Lihat</a></td>
+
 											</tr>";
-			
+
 									}
 								} else {
 									echo "<h1 style='text-align:center'>Tidak ada hasil</h1>";
-								}		
+								}
 							?>
 							</table>
     					</div>
