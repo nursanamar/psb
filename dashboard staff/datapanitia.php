@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
@@ -22,9 +22,12 @@ session_start();
 			} else {
 				$id_panitia="PNT0001";
 			}
+		$now= (isset($_GET['page'])) ? $_GET['page']: 0;
+		$pre= ($now > 1) ? $now - 1 : 1;
+		$next=$now + 1;
  ?>
 
- <?php 
+ <?php
 	if (isset($_GET['id'])) {
 		$hps=mysqli_query($sambung,"DELETE FROM panitia WHERE id_panitia='$_GET[id]'")or die(mysqli_error($sambung));
 		if ($hps) {
@@ -34,9 +37,9 @@ session_start();
 			</script>";
 			echo "<script type='text/javascript'>window.location='datapanitia.php'</script>";
 		} else {
-			
+
 		}
-		
+
 	}
 	if (isset($_GET['edit'])) {
 	$id_panitia=$_GET['id_panitia'];
@@ -102,22 +105,26 @@ session_start();
     									<input type="text" name="pass" value="<?php echo "$pass"; ?>">
     								</div>
     							</div>
-    							
+
     							<input type="submit" name="submit" class="btn btn-lg btn-primary">
     						</form>
     					</div>
     				</div>
     				<div class="row kotak">
     					<div class="col-lg-12">
-    						<?php 
+    						<?php
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
  									$q="SELECT * FROM panitia WHERE $kit='$ket'";
 							 	}else{
- 									$q="SELECT * FROM panitia ORDER BY id_panitia DESC";
+ 									$q="SELECT * FROM panitia ORDER BY id_panitia DESC limit 0,3";
  								}if (isset($_GET['rst'])) {
- 									$q="SELECT * FROM panitia ORDER BY id_panitia DESC";
+ 									$q="SELECT * FROM panitia ORDER BY id_panitia DESC limit 0,3";
+ 								}if (isset($_GET['page'])) {
+ 									$to = 3;
+									$from = ($_GET['page'] - 1) * $to;
+									$q="SELECT * FROM panitia ORDER BY id_panitia DESC LIMIT $from,$to";
  								}
  								$abl=mysqli_query($sambung,$q) or die(mysqli_error($sambung));
   							?>
@@ -144,6 +151,7 @@ session_start();
  								<input type="submit" name="tmbl" class="btn btn-primary">
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
+							<a href=<?php echo "datapanitia.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "datapanitia.php?page=".$next; ?> class="btn btn-default">></a>
 							<table class="table table-bordered">
 								<thead>
 									<tr>
@@ -155,7 +163,7 @@ session_start();
 										<td>Aksi</td>
 									</tr>
 								</thead>
-							<?php 
+							<?php
 								if ($abl) {
 									$no="";
 									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
@@ -168,9 +176,9 @@ session_start();
 											<td>$data[pass]</td>
 											<td><a href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
 											</tr>";
-			
+
 									}
-								}		
+								}
 							?>
 							</table>
     					</div>
