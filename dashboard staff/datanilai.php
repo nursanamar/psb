@@ -94,47 +94,49 @@ session_start();
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
 							<a href=<?php echo "datanilai.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "datanilai.php?page=".$next; ?> class="btn btn-default">></a>
-							<table class="table table-bordered">
-                <thead>
-                  <td>NO</td>
-                  <td>ID csba</td>
-             			<td>Nama</td>
-             			<td>Jurusan</td>
-                  <td>Kesehatan</td>
-                  <td>Wawancara</td>
-             			<td>Mengaji</td>
-                  <td>Tulis</td>
-             		</thead>
-							<?php
-								if ($abl) {
-									$no="";
-									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
-                    $no=$no+1;
-                    $poli=unserialize($data['kesehatan']);
-                		echo "<tr>
-                      <td>$no</td>
-                			<td>$data[id_csba]</td>
-                			<td>$data[nama]</td>
-                			<td>$data[pertama]</td>
-                			<td>berat : $poli[berat] kg<br>
-                          tinggi : $poli[tinggi] cm <br>
-                          tensi : $poli[tensi] Mmhg <br>
-                          rabun : $poli[rabun]<br>
-                          buta warna : $poli[buta] <br>
-                          riwayat merokok : $poli[merokok]<br>
-                          riwayat penyakit : $poli[penyakit]
-                      </td>
-                			<td>$data[wawancara]</td>
-                			<td>$data[mengaji]</td>
-                			<td>$data[tulis]</td>
-                		</tr>";
+							<div class="table-responsive">
+								<table class="table table-bordered">
+	                <thead>
+	                  <td>NO</td>
+	                  <td>ID csba</td>
+	             			<td>Nama</td>
+	             			<td>Jurusan</td>
+	                  <td>Kesehatan</td>
+	                  <td>Wawancara</td>
+	             			<td>Mengaji</td>
+	                  <td>Tulis</td>
+	             		</thead>
+								<?php
+									if ($abl) {
+										$no="";
+										while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
+	                    $no=$no+1;
+	                    $poli=unserialize($data['kesehatan']);
+	                		echo "<tr>
+	                      <td>$no</td>
+	                			<td>$data[id_csba]</td>
+	                			<td>$data[nama]</td>
+	                			<td>$data[pertama]</td>
+	                			<td>berat : $poli[berat] kg<br>
+	                          tinggi : $poli[tinggi] cm <br>
+	                          tensi : $poli[tensi] Mmhg <br>
+	                          rabun : $poli[rabun]<br>
+	                          buta warna : $poli[buta] <br>
+	                          riwayat merokok : $poli[merokok]<br>
+	                          riwayat penyakit : $poli[penyakit]
+	                      </td>
+	                			<td>$data[wawancara]</td>
+	                			<td>$data[mengaji]</td>
+	                			<td>$data[tulis]</td>
+	                		</tr>";
 
+										}
+									} else {
+										echo "<h1 style='text-align:center'>Tidak ada hasil</h1>";
 									}
-								} else {
-									echo "<h1 style='text-align:center'>Tidak ada hasil</h1>";
-								}
-							?>
-							</table>
+								?>
+								</table>
+							</div>
     					</div>
     				</div>
     				<div class="row kotak">

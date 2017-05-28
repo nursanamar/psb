@@ -152,35 +152,37 @@ session_start();
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
 							<a href=<?php echo "datapanitia.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "datapanitia.php?page=".$next; ?> class="btn btn-default">></a>
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<td>#</td>
-										<td>Id</td>
-										<td>Nama</td>
-										<td>NISN</td>
-										<td>Pass</td>
-										<td>Aksi</td>
-									</tr>
-								</thead>
-							<?php
-								if ($abl) {
-									$no="";
-									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
-										$no=$no + 1;
-										echo "	<tr>
-											<td>$no</td>
-											<td>$data[id_panitia]</td>
-											<td>$data[nama]</td>
-											<td>$data[nisn]</td>
-											<td>$data[pass]</td>
-											<td><a href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
-											</tr>";
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<td>#</td>
+											<td>Id</td>
+											<td>Nama</td>
+											<td>NISN</td>
+											<td>Pass</td>
+											<td>Aksi</td>
+										</tr>
+									</thead>
+								<?php
+									if ($abl) {
+										$no="";
+										while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
+											$no=$no + 1;
+											echo "	<tr>
+												<td>$no</td>
+												<td>$data[id_panitia]</td>
+												<td>$data[nama]</td>
+												<td>$data[nisn]</td>
+												<td>$data[pass]</td>
+												<td><a href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
+												</tr>";
 
+										}
 									}
-								}
-							?>
-							</table>
+								?>
+								</table>
+							</div>
     					</div>
     				</div>
     			</div>

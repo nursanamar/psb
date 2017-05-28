@@ -94,46 +94,48 @@ session_start();
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
 							<a href=<?php echo "index.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "index.php?page=".$next; ?> class="btn btn-default">></a>
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<td>#</td>
-										<td>Id</td>
-										<td>nama</td>
-										<td>jenis kelamin</td>
-										<td>asal sekolah</td>
-										<td>ayah</td>
-										<td>wali</td>
-										<td>jurusan</td>
-										<td>tgl regist</td>
-										<td>Aksi</td>
-									</tr>
-								</thead>
-							<?php
-								if ($abl) {
-									$no="";
-									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
-										$no=$no + 1;
-										echo "	<tr>
-											<td>$no</td>
-											<td>$data[id_csba]</td>
-											<td>$data[nama]</td>
-											<td>$data[klmin]</td>
-											<td>$data[sekolah_asal]</td>
-											<td>$data[ayah]</td>
-											<td>$data[nama_wali]</td>
-											<td>$data[pertama]</td>
-											<td>$data[tgl_regist]</td>
-											<td><a href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a><a href='index.php?id=$data[id_csba]'> hapus </a><a href='lihat.php?id=$data[id_csba]'>Lihat</a></td>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<td>#</td>
+											<td>Id</td>
+											<td>nama</td>
+											<td>jenis kelamin</td>
+											<td>asal sekolah</td>
+											<td>ayah</td>
+											<td>wali</td>
+											<td>jurusan</td>
+											<td>tgl regist</td>
+											<td>Aksi</td>
+										</tr>
+									</thead>
+								<?php
+									if ($abl) {
+										$no="";
+										while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
+											$no=$no + 1;
+											echo "	<tr>
+												<td>$no</td>
+												<td>$data[id_csba]</td>
+												<td>$data[nama]</td>
+												<td>$data[klmin]</td>
+												<td>$data[sekolah_asal]</td>
+												<td>$data[ayah]</td>
+												<td>$data[nama_wali]</td>
+												<td>$data[pertama]</td>
+												<td>$data[tgl_regist]</td>
+												<td><a href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a><a href='index.php?id=$data[id_csba]'> hapus </a><a href='lihat.php?id=$data[id_csba]'>Lihat</a></td>
 
-											</tr>";
+												</tr>";
 
+										}
+									} else {
+										echo "<h1 style='text-align:center'>Tidak ada hasil</h1>";
 									}
-								} else {
-									echo "<h1 style='text-align:center'>Tidak ada hasil</h1>";
-								}
-							?>
-							</table>
+								?>
+								</table>
+							</div>
     					</div>
     				</div>
     				<div class="row kotak">

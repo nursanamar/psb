@@ -180,37 +180,39 @@ session_start();
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
 							<a href=<?php echo "dataguru.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "dataguru.php?page=".$next; ?> class="btn btn-default">></a>
-							<table class="table table-bordered">
-								<thead>
-									<tr>
-										<td>#</td>
-										<td>Id</td>
-										<td>Nama</td>
-										<td>NIP/NISN</td>
-										<td>Tes</td>
-										<td>Pass</td>
-										<td>Aksi</td>
-									</tr>
-								</thead>
-							<?php
-								if ($abl) {
-									$no="";
-									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
-										$no=$no + 1;
-										echo "	<tr>
-											<td>$no</td>
-											<td>$data[id_guru]</td>
-											<td>$data[nama]</td>
-											<td>$data[nip]</td>
-											<td>$data[tes]</td>
-											<td>$data[pass]</td>
-											<td><a href='dataguru.php?id=$data[id_guru]'>hapus</a>||<a href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
-											</tr>";
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<td>#</td>
+											<td>Id</td>
+											<td>Nama</td>
+											<td>NIP/NISN</td>
+											<td>Tes</td>
+											<td>Pass</td>
+											<td>Aksi</td>
+										</tr>
+									</thead>
+								<?php
+									if ($abl) {
+										$no="";
+										while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
+											$no=$no + 1;
+											echo "	<tr>
+												<td>$no</td>
+												<td>$data[id_guru]</td>
+												<td>$data[nama]</td>
+												<td>$data[nip]</td>
+												<td>$data[tes]</td>
+												<td>$data[pass]</td>
+												<td><a href='dataguru.php?id=$data[id_guru]'>hapus</a>||<a href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
+												</tr>";
 
+										}
 									}
-								}
-							?>
-							</table>
+								?>
+								</table>
+							</div>
     					</div>
     				</div>
     			</div>
