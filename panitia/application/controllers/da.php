@@ -17,9 +17,12 @@ class da extends CI_Controller {
 		$data['id']=$_SESSION['id_pnt'];
 	}
 
-	public function index()
+	public function index($page = 1)
 	{
-		$data['siswa']=$this->model->semua();
+		$data['page'] = $page;
+		$data['next'] = $page + 1;
+		$data['prev'] = ($page > 1) ? $page - 1:1;
+		$data['siswa']=$this->model->semua($page);
 
 		$this->load->view('panitia',$data);
 	}

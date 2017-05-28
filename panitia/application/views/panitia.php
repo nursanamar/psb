@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php 
+<?php
 	$hlmn='data';
  ?>
 <!DOCTYPE html>
@@ -52,9 +52,10 @@
     								<input type="submit" name="submit" class="btn btn-primary">
                                     <a href="<?php echo base_url()."index.php/da"; ?>"><span class="btn btn-primary">Reset</span></a>
     							</div>
-    							
+
     						</form>
                             <div class="table-responsive">
+															<a href=<?php echo base_url()."index.php/da/index/".$prev; ?> class="btn btn-default"><</a><a href=<?php echo base_url()."index.php/da/index/".$next; ?> class="btn btn-default">></a>
                                <table class="table table-bordered">
                                 <thead>
                                     <tr>
@@ -68,12 +69,12 @@
                                         <td>jurusan</td>
                                         <td>tgl regist</td>
                                         <td>status</td>
-                                       
+
                                         <td>Aksi</td>
                                     </tr>
                                 </thead>
                                 <?php
-                                    $i=""; 
+                                    $i="";
                                     foreach ($siswa->result() as $csba) {
                                         $i=$i + 1;
                                 ?>
@@ -88,17 +89,17 @@
                                         <td><?php echo "$csba->pertama"; ?></td>
                                         <td><?php echo "$csba->tgl_regist"; ?></td>
                                         <td><?php echo "$csba->status"; ?></td>
-                                        
+
                                         <td><a href="<?php echo base_url()."index.php/da/lihat/$csba->id_csba"; ?>" target=_blank>lihat</a></td>
                                     </tr>
 
                                 <?php
-                                    
+
                                     }
                                  ?>
-                            </table> 
+                            </table>
                             </div>
-    						
+
     					</div>
     				</div>
     			</div>

@@ -1,23 +1,26 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php 
+<?php
 	/**
-	* 
+	*
 	*/
 	class model extends CI_Model
 	{
-		
+
 		function __construct()
 		{
-			parent::__construct(); 
+			parent::__construct();
 
 		}
-		public function semua()
+		public function semua($page = 1)
 		{
+			$to = 20;
+			$from = ($page > 1)? ($page - 1) * $to: 0;
 			$this->db->select("*");
 			$this->db->from("csba");
 			$this->db->join("orang_tua","csba.id_csba = orang_tua.id_csba");
 			$this->db->join("wali","csba.id_csba = wali.id_csba");
 			$this->db->join("pilihan_jurusan","csba.id_csba = pilihan_jurusan.id_csba");
+			$this->db->limit($to,$from);
 			//$this->db->join("no_tes","csba.id_csba = no_tes.id_csba");
 
 			return $this->db->get();
