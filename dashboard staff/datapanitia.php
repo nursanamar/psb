@@ -22,7 +22,7 @@ session_start();
 			} else {
 				$id_panitia="PNT0001";
 			}
-		$now= (isset($_GET['page'])) ? $_GET['page']: 0;
+		$now= (isset($_GET['page'])) ? $_GET['page']: 1;
 		$pre= ($now > 1) ? $now - 1 : 1;
 		$next=$now + 1;
  ?>

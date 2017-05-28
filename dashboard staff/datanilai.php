@@ -6,6 +6,9 @@ session_start();
     }
     $id=$_SESSION['id'];
     $hlmn="datates";
+		$now= (isset($_GET['page'])) ? $_GET['page']: 1;
+		$pre= ($now > 1) ? $now - 1 : 1;
+		$next=$now + 1;
  ?>
  <?php
 	if (isset($_GET['id'])) {
@@ -60,6 +63,10 @@ session_start();
  									$q="SELECT * FROM csba INNER JOIN (pilihan_jurusan INNER JOIN tes ON pilihan_jurusan.id_csba=tes.id_csba) ON csba.id_csba=tes.id_csba ORDER BY csba.id_csba DESC";
  								}if (isset($_GET['rst'])) {
  									$q="SELECT * FROM csba INNER JOIN (pilihan_jurusan INNER JOIN tes ON pilihan_jurusan.id_csba=tes.id_csba) ON csba.id_csba=tes.id_csba ORDER BY csba.id_csba DESC";
+ 								}if (isset($_GET['page'])) {
+ 									$to = 5;
+									$from = ($_GET['page'] - 1) * $to;
+									$q="SELECT * FROM csba INNER JOIN (pilihan_jurusan INNER JOIN tes ON pilihan_jurusan.id_csba=tes.id_csba) ON csba.id_csba=tes.id_csba ORDER BY csba.id_csba DESC LIMIT $from,$to";
  								}
  								$abl=mysqli_query($sambung,$q) or die(mysqli_error($sambung));
   							?>
@@ -86,6 +93,7 @@ session_start();
  								<input type="submit" name="tmbl" class="btn btn-primary">
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
+							<a href=<?php echo "datanilai.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "datanilai.php?page=".$next; ?> class="btn btn-default">></a>
 							<table class="table table-bordered">
                 <thead>
                   <td>NO</td>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
@@ -23,9 +23,12 @@ session_start();
 			} else {
 				$id_guru="GRU0001";
 			}
+			$now= (isset($_GET['page'])) ? $_GET['page']: 1;
+			$pre= ($now > 1) ? $now - 1 : 1;
+			$next=$now + 1;
  ?>
 
- <?php 
+ <?php
 	if (isset($_GET['id'])) {
 		$hps=mysqli_query($sambung,"DELETE FROM guru WHERE id_guru='$_GET[id]'")or die(mysqli_error($sambung));
 		if ($hps) {
@@ -34,9 +37,9 @@ session_start();
 			</script>";
 			echo "<script type='text/javascript'>window.location='dataguru.php'</script>";
 		} else {
-			
+
 		}
-		
+
 	}
 	if (isset($_GET['edit'])) {
 	$id_guru=$_GET['id_guru'];
@@ -109,7 +112,7 @@ session_start();
     								</div>
     								<div class="col-sm-2 col-md-2">
     									<select type="text" name="jurusan">
-    									<?php 
+    									<?php
                                             switch ($jurusan) {
                                                 case 'kesehatan':
                                                     echo " <option value='kesehatan' selected>Kesehatan</option>";
@@ -137,7 +140,7 @@ session_start();
     				</div>
     				<div class="row kotak">
     					<div class="col-lg-12">
-    						<?php 
+    						<?php
  								if (isset($_GET['tmbl'])) {
  									$ket=mysql_escape_string($_GET['ket']);
  									$kit=mysql_escape_string($_GET['kti']);
@@ -146,6 +149,10 @@ session_start();
  									$q="SELECT * FROM guru ORDER BY id_guru DESC";
  								}if (isset($_GET['rst'])) {
  									$q="SELECT * FROM guru ORDER BY id_guru DESC";
+ 								}if (isset($_GET['page'])) {
+									$to = 3;
+									$from = ($_GET['page'] - 1) * $to;
+									$q="SELECT * FROM guru ORDER BY id_guru DESC LIMIT $from,$to";
  								}
  								$abl=mysqli_query($sambung,$q) or die(mysqli_error($sambung));
   							?>
@@ -172,6 +179,7 @@ session_start();
  								<input type="submit" name="tmbl" class="btn btn-primary">
  								<input type="submit" name="rst" value="reset" class="btn btn-primary">
  							</form>
+							<a href=<?php echo "dataguru.php?page=".$pre; ?> class="btn btn-default"><</a><span>  </span><a href=<?php echo "dataguru.php?page=".$next; ?> class="btn btn-default">></a>
 							<table class="table table-bordered">
 								<thead>
 									<tr>
@@ -184,7 +192,7 @@ session_start();
 										<td>Aksi</td>
 									</tr>
 								</thead>
-							<?php 
+							<?php
 								if ($abl) {
 									$no="";
 									while ($data=mysqli_fetch_array($abl)or die(mysqli_error($sambung))) {
@@ -198,9 +206,9 @@ session_start();
 											<td>$data[pass]</td>
 											<td><a href='dataguru.php?id=$data[id_guru]'>hapus</a>||<a href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
 											</tr>";
-			
+
 									}
-								}		
+								}
 							?>
 							</table>
     					</div>
