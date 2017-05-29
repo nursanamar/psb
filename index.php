@@ -8,17 +8,46 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/psb.css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
-<!--    <script type="text/javascript">
+		<link rel="stylesheet" href="css/silide.css?ver=1">
+		<script type="text/javascript" src="js\vendor\jquery.min.js">
+
+		</script>
+   <script type="text/javascript">
        $(window).scroll(function() {
                     $(".slideanim").each(function(){
                         var pos = $(this).offset().top;
                         var winTop = $(window).scrollTop();
+												console.log(winTop);
                         if (pos < winTop + 600) {
                             $(this).addClass("slide");
                         }
                     });
-                }); 
-    </script>-->
+										$(".slidetr").each(function(){
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+												console.log(winTop);
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slidetranim");
+                        }
+                    });
+										$(".slidetl").each(function(){
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+												console.log(winTop);
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slidetlanim");
+                        }
+                    });
+										$(".slidez").each(function(){
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+												console.log(winTop);
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slidezanim");
+                        }
+                    });
+                });
+    </script>
 </head>
 <body>
 	<?php include 'header.php'; ?>
@@ -33,7 +62,7 @@
     	</div>
     </div>
     <div class="divider">
-    	
+
     </div>
     <div class="row c">
     	<div class="container ca">
@@ -56,14 +85,14 @@
     	</div>
     </div>
     <div class="row d ">
-    	<div class="container da slideanim">
+    	<div class="container da">
     		<h2>Alur Pendaftarn</h2>
     	</div>
     	<div class="container dc">
     		<ul class="timeline">
                 <li>
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-list"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-badge slidez"><i class="glyphicon glyphicon-list"></i></div>
+                    <div class="timeline-panel slidetl">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Isi formulir</h4>
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
@@ -74,8 +103,8 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-badge slidez"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel slidetr">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Verifikasi</h4>
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
@@ -86,8 +115,8 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-list-alt"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-badge slidez"><i class="glyphicon glyphicon-list-alt"></i></div>
+                    <div class="timeline-panel slidetl">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Tes</h4>
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
@@ -98,8 +127,8 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge"><i class="glyphicon glyphicon-bullhorn"></i></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-badge slidez"><i class="glyphicon glyphicon-bullhorn"></i></div>
+                    <div class="timeline-panel slidetr">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Pengumuman</h4>
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
@@ -108,7 +137,7 @@
                             <p>Pngumuman CSB yang lulus  </p>
                         </div>
                     </div>
-                </li>     
+                </li>
             </ul>
     	</div>
     </div>
@@ -130,7 +159,7 @@
             <h2 style="text-align:center;">Profil Jurusan</h2>
         </div>
         <div class="container">
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -138,7 +167,7 @@
                     <h4 style="text-align:center;">Administrasi Perkantoran</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -146,7 +175,7 @@
                     <h4 style="text-align:center;">Akuntansi</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -154,7 +183,7 @@
                     <h4 style="text-align:center;">Tata Niaga</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -162,7 +191,7 @@
                     <h4 style="text-align:center;">Tata Busana</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -170,7 +199,7 @@
                     <h4 style="text-align:center;">Teknik Komputer dan Jaringan</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -178,7 +207,7 @@
                     <h4 style="text-align:center;">Teknik Kendaraan Ringan</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -186,7 +215,7 @@
                     <h4 style="text-align:center;">Teknik Audio Video</h4>
                 </div>
             </div>
-            <div class="col-sm-3 col-md-3">
+            <div class="col-sm-3 col-md-3 slideanim">
                 <div>
                     <img src="image/placeholder.jpg">
                 </div>
@@ -197,12 +226,12 @@
         </div>
     </div>
     <div class="clearfix" style="min-height: 100px;">
-        
+
     </div>
     <div class="footer">
         <div class="container">
             <div class="col-lg-4 col-md-4 afoot">
-                
+
                 <ul>
                     <h5>lorem</h5>
                     <li>lorem</li>
@@ -213,7 +242,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 afoot">
-                
+
                 <ul>
                     <h5>lorem</h5>
                     <li>lorem</li>
@@ -224,7 +253,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 afoot">
-                
+
                 <ul>
                     <h5>lorem</h5>
                     <li>lorem</li>
