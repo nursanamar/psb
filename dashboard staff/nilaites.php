@@ -18,7 +18,8 @@
  			<td>Jurusan</td>
       <td>Kesehatan</td>
       <td>Wawancara</td>
- 			<td>Mengaji</td>
+			<td>Mengaji</td>
+ 			<td>Tulis</td>
  		</thead>
  		<?php
 	$query="SELECT * FROM csba INNER JOIN (pilihan_jurusan INNER JOIN tes ON pilihan_jurusan.id_csba=tes.id_csba) ON csba.id_csba=tes.id_csba";
