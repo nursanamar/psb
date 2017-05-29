@@ -175,7 +175,7 @@ session_start();
 												<td>$data[nama]</td>
 												<td>$data[nisn]</td>
 												<td>$data[pass]</td>
-												<td><a href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
+												<td><a class='btn btn-danger btn-xs' href='datapanitia.php?id=$data[id_panitia]'>hapus</a>||<a class='btn btn-xs btn-primary' href='datapanitia.php?edit=1&id_panitia=$data[id_panitia]&nama=$data[nama]&nisn=$data[nisn]&pass=$data[pass]'>Edit</a></td>
 												</tr>";
 
 										}

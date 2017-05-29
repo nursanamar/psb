@@ -205,7 +205,7 @@ session_start();
 												<td>$data[nip]</td>
 												<td>$data[tes]</td>
 												<td>$data[pass]</td>
-												<td><a href='dataguru.php?id=$data[id_guru]'>hapus</a>||<a href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
+												<td><a class='btn btn-xs btn-danger' href='dataguru.php?id=$data[id_guru]'>hapus</a> || <a class='btn btn-xs btn-primary' href='dataguru.php?edit=1&id_guru=$data[id_guru]&nama=$data[nama]&nip=$data[nip]&pass=$data[pass]&jurusan=$data[tes]'>Edit</a></td>
 												</tr>";
 
 										}

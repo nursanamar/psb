@@ -125,7 +125,7 @@ session_start();
 												<td>$data[nama_wali]</td>
 												<td>$data[pertama]</td>
 												<td>$data[tgl_regist]</td>
-												<td><a href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a><a href='index.php?id=$data[id_csba]'> hapus </a><a href='lihat.php?id=$data[id_csba]'>Lihat</a></td>
+												<td><a class='btn btn-danger btn-xs' href='index.php?id=$data[id_csba]' onclick='return confirmLink('yaking ')'>hapus</a>   <a class='btn btn-primary btn-xs' href='lihat.php?id=$data[id_csba]'>Lihat</a></td>
 
 												</tr>";
 

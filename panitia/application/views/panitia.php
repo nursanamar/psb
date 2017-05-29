@@ -88,9 +88,9 @@
                                         <td><?php echo "$csba->nama_wali"; ?></td>
                                         <td><?php echo "$csba->pertama"; ?></td>
                                         <td><?php echo "$csba->tgl_regist"; ?></td>
-                                        <td><?php echo "$csba->status"; ?></td>
+                                        <td><?php echo ($csba->status === NULL) ? "<span class='label label-danger'>Belum verifikasi</span>":"<span class='label label-success'>$csba->status</span>" ; ?></td>
 
-                                        <td><a href="<?php echo base_url()."index.php/da/lihat/$csba->id_csba"; ?>" target=_blank>lihat</a></td>
+                                        <td><a class="btn btn-primary btn-xs" href="<?php echo base_url()."index.php/da/lihat/$csba->id_csba"; ?>" target=_blank>lihat</a></td>
                                     </tr>
 
                                 <?php
