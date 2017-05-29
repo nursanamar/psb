@@ -1,5 +1,5 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
-<?php 
+<?php
 	$hlmn='notiflist';
  ?>
 <!DOCTYPE html>
@@ -9,9 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>panita</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/sidebar.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/bootstrap.css"?>>
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/sidebar.css"?>>
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/dashboard.css"?>>
 	<script type="text/javascript">
 		function togel() {
         	var x=document.getElementById("wrapper");
@@ -44,9 +44,9 @@
     		</div>
     	</div>
     </div>
-    <script src="../js/vendor/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/docs.min.js"></script>
+		<script src=<?=DOMAIN."js/vendor/jquery.min.js"?>></script>
+    <script src=<?=DOMAIN."js/bootstrap.min.js"?>></script>
+    <script src=<?=DOMAIN."js/docs.min.js"?>></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

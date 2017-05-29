@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/psb/panitia/';
+$config['base_url']	= DOMAIN.'panitia/';
 
 /*
 |--------------------------------------------------------------------------
