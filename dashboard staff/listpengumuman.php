@@ -1,9 +1,9 @@
 
-<?php 
+<?php
   include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+      echo "<script type='text/javascript'>window.location='".DOMAIN."'</script>";
     }
     $id=$_SESSION['id'];
     $hlmn="notiflist";
@@ -42,7 +42,7 @@ session_start();
                     <td>Untuk</td>
                     <td>Pembuat</td>
                   </thead>
-                  <?php 
+                  <?php
                     $ery=mysqli_query($sambung,"SELECT notif.judul, notif.tgl,notif.untuk, staff.nama FROM notif INNER JOIN staff ON notif.id_staff = staff.id_staff");
                     $no=0;
                     if (empty($ery)) {
@@ -58,7 +58,7 @@ session_start();
                             <td>$data[nama]</td>
                       </tr>";
                     }
-                    
+
                     }
                    ?>
                 </table>

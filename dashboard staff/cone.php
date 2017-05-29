@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$host= "localhost";
 	$user="root";
 	$pass="";
@@ -9,5 +9,6 @@
 	} else {
 		echo mysqli_error();
 	}
-	
+	define('DOMAIN',((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https":"http")."://".$_SERVER['HTTP_HOST'].'/psb/');
+
  ?>

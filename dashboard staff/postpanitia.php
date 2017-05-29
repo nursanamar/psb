@@ -1,8 +1,8 @@
-<?php 
+<?php
 	include 'cone.php';
 	session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+			echo "<script type='text/javascript'>window.location='".DOMAIN."'</script>";
     }
     $id_panitia=$_POST['id_panitia'];
     $nama=$_POST['nama'];

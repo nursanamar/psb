@@ -1,8 +1,8 @@
-<?php 
+<?php
     include 'cone.php';
     session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='../index.php'</script";
+      echo "<script type='text/javascript'>window.location='".DOMAIN."'</script>";
     }
     $id=$_SESSION['id'];
     $hlmn="notif";
@@ -50,9 +50,9 @@
                                     <option value="staff">Staff</option>
                                 </select>
                                 <input type="submit" name="submit" value="submit" class="btn btn-large btn-primary">
-                            </form> 
+                            </form>
                         </div>
-                        
+
     				</div>
     			</div>
     		</div>

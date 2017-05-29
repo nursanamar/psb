@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CSBA</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/psb.css">
-	<link rel="stylesheet" type="text/css" href="http://localhost/psb/css/csba.css">
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/bootstrap.css"?>>
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/psb.css"?>>
+	<link rel="stylesheet" type="text/css" href=<?=DOMAIN."css/csba.css"?>>
 </head>
 <body>
 	<nav class='navbar navbar-fixed-top a'>
@@ -57,11 +57,11 @@
        </div>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://localhost/psb/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="http://localhost/psb/js/bootstrap.min.js"></script>
-    <script src="http://localhost/psb/js/docs.min.js"></script>
-    <script type="text/javascript" src="http://localhost/psb/js/slide.js"></script>
+    <script>window.jQuery || document.write('<script src=<?=DOMAIN."js/vendor/jquery.min.js"?>><\/script>')</script>
+    <script src=<?=DOMAIN."js/bootstrap.min.js"?>></script>
+    <script src=<?=DOMAIN."js/docs.min.js"?>></script>
+    <!-- <script type="text/javascript" src="http://localhost/psb/js/slide.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://localhost/psb//js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="http://localhost/psb//js/ie10-viewport-bug-workaround.js"></script> -->
 </body>
 </html>

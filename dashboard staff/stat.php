@@ -1,9 +1,9 @@
-<?php 
+<?php
   include 'cone.php';
   include '../randpass.php';
 session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+      echo "<script type='text/javascript'>window.location='".DOMAIN."'</script>";
     }
     $id=$_SESSION['id'];
     $hlmn="stat";

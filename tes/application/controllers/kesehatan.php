@@ -1,16 +1,16 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* 
+*
 */
 class kesehatan extends CI_Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
 		session_start();
 		if (empty($_SESSION['kesehatan'])) {
-			redirect('http://localhost/psb/');
+			redirect(DOMAIN);
 		}
 		$this->load->model('modelpoli');
 	}
@@ -37,9 +37,9 @@ class kesehatan extends CI_Controller
 				$this->load->view('poli',$data);
 			}
 		}
-		
 
-		
+
+
 	}
 	public function nilaites()
 	{
@@ -68,10 +68,10 @@ class kesehatan extends CI_Controller
 			echo "striaaaag"."<br>";
 			print_r($cek);
 		}else{
-			
+
 				echo "$hsl->kesehatan"."<br>";
 				print_r($hsl);
-			
+
 		}
 		print_r($cek);
 	}
@@ -80,7 +80,7 @@ class kesehatan extends CI_Controller
 		unset($_SESSION['kesehatan']);
 		unset($_SESSION['id_guru']);
 		session_destroy();
-		redirect('http://localhost/psb/');
+		redirect(DOMAIN);
 	}
 	public function lihatnotif($id)
 	{

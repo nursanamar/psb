@@ -1,8 +1,8 @@
-<?php 
+<?php
 	include 'cone.php';
 	session_start();
     if (empty($_SESSION['id'])) {
-        echo "<script type='text/javascript'>window.location='http://localhost/psb'</script>";
+			echo "<script type='text/javascript'>window.location='".DOMAIN."'</script>";
     }
  ?>
  <!DOCTYPE html>
@@ -37,7 +37,7 @@
  			<td>alamat wali</td>
  			<td>pendidikan wali</td>
  		</thead>
- 		<?php 
+ 		<?php
 	$query="SELECT * FROM csba INNER JOIN (orang_tua INNER JOIN (wali INNER JOIN csbalulus ON wali.id_csba=csbalulus.id_csba) ON wali.id_csba=orang_tua.id_csba) ON csba.id_csba=orang_tua.id_csba";
 	$jln=mysqli_query($sambung,$query);
 	while ($data=mysqli_fetch_array($jln)) {
