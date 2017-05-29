@@ -1,4 +1,4 @@
-<?php 
+<?php
   include 'cone.php';
 session_start();
     if (empty($_SESSION['id'])) {
@@ -39,6 +39,13 @@ session_start();
                   <input type="file" name="file" accept=".xls">
                   <input type="submit" name="submit">
                 </form>
+                <?php
+                if ((isset($_GET['s']) && isset($_GET['g']) && isset($_GET['t']))) {
+                  echo "<div class='alert alert-success' role='alert'>
+                    <strong>Berhasil!</strong> Upload file berhasil, sukses : ".$_GET['s'].", gagal : ".$_GET['g'].", total : ".$_GET['t']."
+                  </div>";
+                }
+                 ?>
               </div>
             </div>
           </div>
