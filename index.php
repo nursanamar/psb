@@ -98,7 +98,11 @@
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
                         </div>
                         <div class="timeline-body">
-                            <p>Mengisi formulir secara online </p>
+                            <p>PESERTA WAJIB MELAKUKAN DAFTAR ONLINE PADA <a href="http://gg.gg/ppdbonlinesmkn1blk">LINK INI</a>
+DAN WAJIB MENGISI FORMAT BIODATA SAMPAI SELESAI.
+DAN AKAN MENDAPATKAN ID,PASSWORD DAN INFORMASI BERKAS YANG HARUS DILENKAPI*
+</p>
+														<small class="text-danger">*SIMPAN DAN CATAT BAIK-BAIK ID DAN PASWORD YANG ANDA DAPATKAN</small>
                         </div>
                     </div>
                 </li>
@@ -110,7 +114,13 @@
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
                         </div>
                         <div class="timeline-body">
-                            <p>verifikasi pandafatarn di sekolah sekaligus pengumpulan berkas </p>
+                            <p>
+															<ul>
+																<li style="text-align:left">PESERTA WAJIB MEMPERLIHATKAN BUKTI PENDAFTARAN ONLINE ATAU ID UNTUK DIVERIFIKASI OLEH PETUGAS</li>
+																<li style="text-align:left">PESERTA YANG TERBUKTI TELAH MELAKUKAN PENDAFTARAN ONLINE, WAJIB MEMPERLIHATKAN KELENGKAPAN BERKAS KEPADA PETUGAS</li>
+																<li style="text-align:left">PESERTA YANG TIDAK TERBUKTI, HARAP MENDAFTAR SECARA ONLINE DAN MELENGKAPI BERKAS</li>
+															</ul>
+														</p>
                         </div>
                     </div>
                 </li>
@@ -122,7 +132,15 @@
                             <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>12/12/12</small></p>
                         </div>
                         <div class="timeline-body">
-                            <p>Mengikuti tes setelah melakukan verifikasi berupa tes kesehatan,wawancara,mengaji, dan tes tulis </p>
+                            <p>
+															<ul>
+																<li style="text-align:left">PESERTA WAJIB MENGIKUTI TES KESEHATAN & CEK FISIK*</li>
+																<li style="text-align:left">PESERTA WAJIB MELAKUKAN TES BACA TULIS AL-QURAN</li>
+																<li style="text-align:left">PESERTA WAJIB MENGIKUTI WAWANCARA PEMINATAN</li>
+																<li style="text-align:left">PESERTA WAJIB MENGIKUTI  TES TERTULIS</li>
+															</ul>
+														</p>
+														<small class="text-danger">*SEMUA KEGIATAN TES KESEHATAN & CEK FISIK DILAKSANAKAN PADA POLIKLINIK SMKN 1 BULUKUMBA, BUKAN DI PUSKESMAS ATAU PUN RUMAH SAKIT </small>
                         </div>
                     </div>
                 </li>
