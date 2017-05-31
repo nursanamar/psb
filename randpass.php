@@ -23,5 +23,13 @@ function hitungjrsn($sambung,$jrsn)
     $count=$data;
     return $count;
 }
-
+function ceknisn($sambung,$nisn){
+  $query="SELECT nisn FROM csba WHERE csba.nisn='$nisn'";
+  $send= mysqli_query($sambung,$query);
+  $hasil= mysqli_fetch_array($send);
+  if ($hasil) {
+    return true;
+  }
+  return false;
+}
 ?>
