@@ -36,6 +36,9 @@
 	if (empty($nama) || empty($ttlhr) || empty($tgl) || empty($klmin) || empty($wn) || empty($alamat) || empty($aslsklh) || empty($almasklh)) {
 		echo "<script type='text/javascript'>window.location='daftar.php?res=1&nama=$nama&ttlhr=$ttlhr#err'</script>";
 	} else {
+		if (ceknisn($sambung,$nisn)) {
+			header('location: invalidnisn.php');
+		}
 		$qu=mysqli_query($sambung,"SELECT id_csba FROM `csba` ORDER BY id_csba DESC");
 		if ($qu) {
 			$data=mysqli_fetch_array($qu);
